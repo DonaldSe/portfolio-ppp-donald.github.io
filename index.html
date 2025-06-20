@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Donald Se</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0f172a;
-      color: #f1f5f9;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111827;
     }
     header {
-      background-color: #1e293b;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
-    header h1 { font-size: 3rem; }
-    header p { font-size: 1.2rem; color: #94a3b8; }
-
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #6b7280;
+    }
     nav {
-      background: #111827;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem;
+      padding: 1rem 0;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
     }
     nav a {
-      color: #f1f5f9;
       text-decoration: none;
-      transition: color 0.3s;
+      color: #1f2937;
+      font-weight: 500;
     }
-    nav a:hover { color: #38bdf8; }
-
+    nav a:hover {
+      color: #2563eb;
+    }
     section {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #1e293b;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      margin: 3rem auto;
+      padding: 0 2rem;
     }
     section h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #38bdf8;
+      color: #111827;
+      border-left: 4px solid #2563eb;
+      padding-left: 0.5rem;
     }
     ul {
       list-style: none;
       padding-left: 1rem;
     }
     ul li::before {
-      content: '\2022';
-      color: #38bdf8;
+      content: "\2022";
+      color: #2563eb;
       display: inline-block;
       width: 1em;
       margin-left: -1em;
     }
+    .contact-icons {
+      margin-top: 1rem;
+    }
+    .contact-icons a {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: #2563eb;
+    }
     footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-    .contact-icons i {
-      margin-right: 1rem;
-      font-size: 1.5rem;
-      color: #38bdf8;
+      color: #6b7280;
+      font-size: 0.875rem;
+      border-top: 1px solid #e5e7eb;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Donald Se</h1>
-    <p>Étudiant passionné en Systèmes Numériques & Développeur Web</p>
+    <p>Étudiant en Systèmes Numériques et Développeur Web</p>
   </header>
+
   <nav>
     <a href="#about">À propos</a>
     <a href="#skills">Compétences</a>
@@ -89,42 +103,43 @@
 
   <section id="about">
     <h2>À propos</h2>
-    <p>Passionné par l'informatique et les nouvelles technologies depuis mon plus jeune âge, je suis en Terminale Bac Pro SN. Rigoureux, curieux et créatif, je cherche constamment à apprendre et à relever de nouveaux défis techniques.</p>
+    <p>Je suis passionné par l'informatique et les nouvelles technologies. Étudiant en terminale Bac Pro SN, j’ai acquis des compétences solides en réseaux, développement, et création numérique.</p>
   </section>
 
   <section id="skills">
     <h2>Compétences</h2>
     <ul>
-      <li>Langages : HTML, CSS, JavaScript, Python, Java, C++, C#, PHP, SQL</li>
-      <li>Design : Photoshop, Premiere Pro, Blender, SolidWorks</li>
-      <li>Réseaux & OS : Windows, Linux, VM (VirtualBox, VMware), Routeurs, Switch</li>
-      <li>IDE : VS Code, IntelliJ, Code::Blocks</li>
+      <li>Développement : HTML, CSS, JavaScript, Java, Python, C++, PHP, SQL</li>
+      <li>Design & Création : Photoshop, Premiere Pro, Blender, SolidWorks</li>
+      <li>Réseaux & Systèmes : Windows, Linux, VirtualBox, VMware, Cisco</li>
+      <li>Outils : VS Code, IntelliJ, AutoCAD, Unity, Packet Tracer</li>
     </ul>
   </section>
 
   <section id="experience">
     <h2>Expérience</h2>
-    <h3>Acadia - Stage (2021 - 2022)</h3>
-    <p>SAV et assemblage d’ordinateurs gaming, gestion du stock, câblage réseau RJ45/Fibre.</p>
-    <h3>Disneyland Hôtel - Stage (2022 - 2023)</h3>
-    <p>Brassage, câblage réseau, configuration de routeurs/switches pour rénovation technique.</p>
+    <h3>Acadia (2021 - 2022)</h3>
+    <p>Stage de 8 semaines : Assemblage d’ordinateurs, SAV, câblage RJ45, organisation de stock.</p>
+
+    <h3>Disneyland Hôtel (2022 - 2023)</h3>
+    <p>Stage de 8 semaines : Rénovation réseau, brassage, configuration de switchs et routeurs.</p>
   </section>
 
   <section id="education">
     <h2>Formation</h2>
     <ul>
-      <li>BAC PRO SN (Systèmes Numériques) - Lycée Simone Veil (2021-2024)</li>
-      <li>Conservatoire Maurice-Baquet - Piano, Chant, Solfège (2015-2024)</li>
-      <li>Certifications : PIX, Secourisme, ASSR1 & 2, Brevet</li>
+      <li>Lycée Simone Veil - Bac Pro SN (2021 - 2024)</li>
+      <li>Conservatoire Maurice-Baquet - Piano & Chant (2015 - 2024)</li>
+      <li>Certifications : PIX, ASSR1 & 2, Secourisme</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>Projets</h2>
     <ul>
-      <li><strong>Site Web CV dynamique</strong> : portfolio interactif HTML/CSS/JS</li>
-      <li><strong>Jeu 2D en C# avec Unity</strong> : conception d’un mini-jeu plateforme</li>
-      <li><strong>Système réseau simulé</strong> : test de VLAN et pare-feu avec Cisco Packet Tracer</li>
+      <li>Portfolio HTML5/CSS3/JS responsive</li>
+      <li>Mini-jeu 2D en C# avec Unity</li>
+      <li>Simulation de réseau avec Cisco Packet Tracer</li>
     </ul>
   </section>
 
